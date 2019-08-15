@@ -1,1 +1,310 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body * {
+  border-width: 1px;
+}
+#container {
+  max-width: 3000px;
+}
+#container .linebreak {
+  border: 0.7px solid lightgray;
+  width: 98%;
+  margin: auto;
+  margin-bottom: 2vh;
+}
+#container .navigation {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#container .navigation nav {
+  margin-left: 2vh;
+  margin-top: 2vh;
+}
+#container .navigation nav a {
+  text-decoration: none;
+  color: black;
+  padding: 2vh 1vh;
+  font-size: 1rem;
+  font-family: 'Roboto';
+}
+@media only screen and (max-width: 500px) {
+  #container .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#container #headerContent {
+  margin: 4%;
+  padding: 2%;
+  background-color: #e6e6e6;
+}
+#container #headerContent img {
+  width: 20vw;
+  height: auto;
+  padding-bottom: 4vh;
+}
+#container #headerContent h1 {
+  text-align: left;
+  font-size: 3.4em;
+  font-family: 'Roboto';
+}
+#container #headerContent h3 {
+  padding-bottom: 3vh;
+  padding-top: 3vh;
+  font-size: 1.15em;
+  font-family: 'Roboto';
+}
+#container #headerContent p {
+  padding-bottom: 5vh;
+}
+#container #headerContent button {
+  margin-bottom: 3vh;
+}
+@media only screen and (max-width: 500px) {
+  #container #headerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #container #headerContent * {
+    text-align: center;
+  }
+  #container #headerContent h1 {
+    font-size: 2em;
+    font-family: 'Roboto';
+    text-align: center;
+  }
+}
+#container .halfWidth {
+  width: 45%;
+  padding: 2vh;
+}
+#container .rowDisplay {
+  display: flex;
+  justify-content: center;
+}
+#container h2 {
+  font-weight: bold;
+  padding-bottom: 2vh;
+  font-size: 1.7em;
+  font-family: 'Roboto';
+}
+@media only screen and (max-width: 500px) {
+  #container h2 {
+    font-size: 1.1em;
+    font-family: 'Roboto';
+  }
+}
+#container p {
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-family: 'Roboto';
+}
+#container .footer {
+  display: flex;
+  justify-content: center;
+  padding: 4vh 0;
+  width: 90%;
+  background: gray;
+  margin: auto;
+}
+#container .footer p {
+  text-align: center;
+  color: white;
+  margin-top: -1vh;
+  font-size: 1.1;
+  font-family: 'Roboto';
+}
+#container .workHistory {
+  display: flex;
+}
+#container #workHistoryTitle {
+  margin-left: 6%;
+  padding-top: 50px;
+}
+#container .margin {
+  margin: 4%;
+  padding: 2%;
+  margin-top: 0;
+  padding-top: 0;
+}
+#container button {
+  background: gray;
+  color: white;
+  border-radius: 5px;
+  padding: 1vh 1.5vh;
+}
+#container button a {
+  font-size: 1.3em;
+  font-family: 'Roboto';
+  color: white;
+  text-decoration: none;
+}
+#container button:hover {
+  background-color: whitesmoke;
+  border: 1px solid black;
+}
+#container button:hover a {
+  color: black;
+}
+#container .columnDisplay {
+  flex-grow: 1;
+}
+#container .columnDisplay p {
+  padding: 1vh 0;
+  width: 100%;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+#container .columnDisplay .skillItem {
+  padding: 1.2vh;
+  border: 1px solid gray;
+}
+#container .columnDisplay .columnTitle {
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: 'Roboto';
+}
+#container #firstColumn * {
+  padding-left: 1.5vh;
+}
+#container .odd {
+  background: #e6e6e6;
+}
